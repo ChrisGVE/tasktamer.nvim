@@ -1,0 +1,11 @@
+name: Stale Issues & PRs
+
+on:
+  schedule:
+    - cron: "30 1 * * *"
+
+jobs:
+  stale:
+    if: contains(fromJSON('chrisgve'), github.repository_owner)
+    uses: chrisgve/github/.github/workflows/stale.yml@main
+    secrets: inherit
