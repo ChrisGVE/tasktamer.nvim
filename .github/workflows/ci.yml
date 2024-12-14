@@ -7,7 +7,7 @@ on:
 
 jobs:
   ci:
-    uses: folke/github/.github/workflows/ci.yml@main
+    uses: chrisgve/github/.github/workflows/ci.yml@main
     secrets: inherit
     with:
       plugin: tasktamer.nvim
