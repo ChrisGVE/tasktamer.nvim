@@ -1,1 +1,5 @@
-return { './plugin/tasktamer', opts = {}, lazy = true }
+return {
+  "tasktamer.nvim",
+  dev = true,
+  opts = {},
+}
